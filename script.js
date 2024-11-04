@@ -11,9 +11,3 @@ toggle.onclick = function(){
     main.classList.toggle('active');
 }
 
-function toggleMenu(){
-    let navigation = document.querySelector('nav');
-    let main = document.querySelector('main');
-    navigation.classList.toggle('active');
-    main.classList.remove('active');
-}

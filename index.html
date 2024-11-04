@@ -1,202 +1,193 @@
+
+<!-- HTML Document for Arthur Vienot Ongaro's Portfolio -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arthur Portfolio</title>
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- GSAP for animations -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   
-<header>
+  <!-- Header Section -->
+  <header>
     <nav>
       <ul>
-        <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
-        <li><a href="#about" onclick="toggleMenu();">About</a></li>
-        <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+        <li><a href="#banner" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#about" onclick="toggleMenu();">À propos</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Compétence</a></li>
         <li><a href="#project" onclick="toggleMenu();">Project</a></li>
-        <li><a href="#contact" onclick="toggleMenu">Contact</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
       </ul>
     </nav>
   </header>
   
+  <!-- Main Content -->
   <main>
-
-  
-    
+    <!-- Top Bar -->
     <div class="topbar">
-     <a href="#" class="logo">Portfolio</a>
-     <div class="toggle">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-     </div>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
     </div>
-    <!-- Banner -->
-       <section class="banner" id="banner">
-          <div class="content">
-            <div class="imgBx">
-              <img src="/img/IMG_0685.jpg" alt="">
-            </div>
-            <h3>Arthur Vienot Ongaro</h3>
-            <p>I'am full stack dev and UX/UI designer.</p>
-            <a href="#" class="btn">Download My CV</a>
-            <ul class="socialMedia">
-              
-              <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-            </ul>
- 
-       </section>
 
+    <!-- Banner Section -->
+    <section class="banner" id="banner">
+      <div class="content">
+        <div class="imgBx">
+          <img src="/img/IMG_0685.jpg" alt="Arthur Vienot Ongaro">
+        </div>
+        <h3>Arthur Vienot Ongaro</h3>
+        <p>I'am full stack dev and UX/UI designer.</p>
+        <button href="#" onclick="audio.play();" class="btn">Download My CV</button>
+        <script>
+          var audio = new Audio('mp3/click.mp3');
+        </script>
+        <ul class="socialMedia">
+          <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </section>
 
-        <!-- About -->
-   <section class="about adjust" id="about">
-     <div class="title">
-       <h2>About Me</h2>
+    <!-- About Section -->
+    <section class="about adjust" id="about">
+      <div class="title">
+        <h2>About Me</h2>
       </div>
       <div class="content">
         <div class="textBox">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et culpae. Impedit est enim aut consectetur minima necessitatibus ut minus dolorum perferendis maxime. Sequi officia ratione iure quae quiscabo <br></p><br> iure consequatminima itaque id. Itaque maxime blanditiis cumque praesentium nesciunt, necessitatibus delectus dignissimos vel dolores ipsa ullam. Nesciunt quas dolorum ut sit dolores quod repudiandae cupiditate! Velit aperiam iure perspiciatis omnis nisi quod 
         </div>
-          <div class="imgBx">
-            <img src="https://media.istockphoto.com/id/492529287/fr/photo/portrait-de-heureux-homme-heureux.jpg?s=612x612&w=0&k=20&c=-UKlP0NtwCf2SJ2js88zQGLxZhfvth5FhXzBoIQ2TWA=" alt="">
-          </div>
+        <div class="imgBx">
+          <img src="https://media.istockphoto.com/id/492529287/fr/photo/portrait-de-heureux-homme-heureux.jpg?s=612x612&w=0&k=20&c=-UKlP0NtwCf2SJ2js88zQGLxZhfvth5FhXzBoIQ2TWA=" alt="About Me Image">
         </div>
-   </section>
-
-    <!-- Services -->
-    <section class="services adjust" id="services">
-      <div class="title">
-        <h2>Services</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quos vel quasi ducimus? Magnam et suscipit nemo est error, molestias amet asperiores ipsam facere sequi nobis earum natus esse modi!</p>
-       </div>
-       <div class="content">
-         <div class="servicesBx">
-           <div class="icon1">
-             <i class="fas fa-paint-brush"></i>
-           </div>
-           <h2>UI/UX Design</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-          </div>
-
-          <div class="servicesBx">
-            <div class="icon2">
-              <i class="fas fa-code"></i>
-            </div>
-            <h2>Web devlopement</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-           </div>
-
-           <div class="servicesBx">
-            <div class="icon3">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <h2>Webflow devlopement</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-           </div>
-
-          </div>
+      </div>
     </section>
 
-    <!-- Project -->
+    <!-- Services Section -->
+    <section class="services adjust" id="services">
+      <div class="title">
+        <h2>Compétence</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quos vel quasi ducimus? Magnam et suscipit nemo est error, molestias amet asperiores ipsam facere sequi nobis earum natus esse modi!</p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <div class="icon1">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
 
+        <div class="servicesBx">
+          <div class="icon2">
+            <i class="fas fa-code"></i>
+          </div>
+          <h2>Web Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+
+        <div class="servicesBx">
+          <div class="icon3">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h2>Webflow Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
     <section class="project adjust" id="project">
       <div class="title">
         <h2>Project</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quos vel quasi ducimus? Magnam et suscipit nemo est error, molestias amet asperiores ipsam facere sequi nobis earum natus esse modi!</p>
-       </div> 
-
-       <div class="content">
-        
+      </div> 
+      <div class="content">
         <div class="workBx">
           <div class="imgBx">
-           <img src="/img/Capture d’écran 2024-11-01 à 19.18.59.png" alt="">
+            <img src="/img/Capture d’écran 2024-11-01 à 19.18.59.png" alt="Project One">
           </div>
           <div class="textBx">
             <h3>Project One</h3>
-            
-           </div>
-         </div>
-
-          <div class="workBx">
-            <div class="imgBx">
-            <img src="/img/Capture d’écran 2024-11-01 à 19.18.59.png" alt="">
-            </div>
-            <div class="textBx">
-              <h3>Project Two</h3>
-              
-            </div> 
           </div>
+        </div>
 
-          <div class="workBx">
-            <div class="imgBx">
-            <img src="/img/Capture d’écran 2024-11-01 à 19.18.59.png" alt="">
-            </div>
-            <div class="textBx">
-              <h3>Project Three</h3>
-              
-            </div>
+        <div class="workBx">
+          <div class="imgBx">
+            <img src="/img/Capture d’écran 2024-11-01 à 19.18.59.png" alt="Project Two">
           </div>
+          <div class="textBx">
+            <h3>Project Two</h3>
+          </div> 
+        </div>
 
-          <div class="workBx">
-            <div class="imgBx">
-            <img src="/img/Capture d’écran 2024-11-01 à 19.18.59.png" alt="">
-            </div>
-            <div class="textBx">
-              <h3>Project Four</h3>
-              
-            </div>
+        <div class="workBx">
+          <div class="imgBx">
+            <img src="/img/Capture d’écran 2024-11-01 à 19.18.59.png" alt="Project Three">
           </div>
+          <div class="textBx">
+            <h3>Project Three</h3>
+          </div>
+        </div>
 
-          
-        
-
-
-      
-         
-       
+        <div class="workBx">
+          <div class="imgBx">
+            <img src="/img/Capture d’écran 2024-11-01 à 19.18.59.png" alt="Project Four">
+          </div>
+          <div class="textBx">
+            <h3>Project Four</h3>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Contact -->
+
+    <!-- Contact Section -->
     <section class="contact adjust" id="contact">
       <div class="title">
         <h2>Contact</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quos vel quasi ducimus? Magnam et suscipit nemo est error, molestias amet asperiores ipsam facere sequi nobis earum natus esse modi!</p>
-       </div>
-       <div class="contentForm">
-          <div class="row">
-            <input type="text" name="" placeholder="First Name">
-            <input type="text" name="" placeholder="Last Name">
-          </div>
-          <div class="row">
-            <input type="text" name="" placeholder="Email">
-            <input type="text" name="" placeholder="Mobile number">
-          </div>
-          <div class="row2">
-            <textarea placeholder="Message"></textarea>
-          </div>
-          <div class="row2">
-            <input type="submit" value="Send">
-          </div>
-       </div>
-           
+      </div>
+      <div class="contentForm">
+        <div class="row">
+          <input type="text" name="" placeholder="First Name">
+          <input type="text" name="" placeholder="Last Name">
+        </div>
+        <div class="row">
+          <input type="text" name="" placeholder="Email">
+          <input type="text" name="" placeholder="Mobile number">
+        </div>
+        <div class="row2">
+          <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="row2">
+          <input type="submit" value="Send">
+        </div>
+      </div>
     </section>
 
-    
+    <!-- Footer Section -->
     <div class="copyRight">
       <p>&copy; 2024 Arthur Vienot Ongaro</p>
-
-            
-  
-
-      
-
+    </div>
   </main>
 
-
-<script src="script.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
 
 </body>
-</html>
+</html></div>
