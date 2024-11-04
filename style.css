@@ -164,6 +164,7 @@ main .content p {
 section{
   position: relative;
   min-height: 100vh;
+  
 }
 
 .banner{
@@ -213,16 +214,12 @@ p{
   padding: 12px 30px;
   background: #f9f9f9;
   color: #717171;
-  margin-top:10px ;
+  margin-top:100px ;
   letter-spacing: 1px;
   font-weight: 400;
   text-decoration: none;
   border-radius: 15px;
   border: 2px solid #d7d7d7;
-  
-}
-
-.btn {
   box-shadow: 2px 2px #d2d2d2;
   transition: all 0.1s ease-in-out;
 }
@@ -243,7 +240,7 @@ p{
 
 .socialMedia{
 position: absolute;
-bottom: 20px;
+bottom: 10px;
 display: flex;
 }
 .socialMedia li{
